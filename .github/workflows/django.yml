@@ -28,4 +28,5 @@ jobs:
       - name: Run Tests
         run: |
           export PYTHONPATH=/test_project/
+          export DJANGO_SETTINGS_MODULE="test_project.settings.py"
           pytest -v -s
