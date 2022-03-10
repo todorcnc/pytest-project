@@ -29,5 +29,4 @@ jobs:
         run: |
           cd test_project/
           export PYTHONPATH=/test_project/
-          export DJANGO_SETTINGS_MODULE="test_project.settings.py"
           pytest -v -s
