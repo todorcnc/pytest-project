@@ -28,5 +28,4 @@ jobs:
       - name: Run Tests
         run: |
           cd test_project/
-          export PYTHONPATH=/test_project/
           pytest -v -s
