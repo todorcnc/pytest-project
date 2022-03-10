@@ -1,3 +1,8 @@
+# Register Django Settings to run the file
+import os, django
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "adjust_test.settings")
+django.setup()
+
 import json
 
 import pytest
