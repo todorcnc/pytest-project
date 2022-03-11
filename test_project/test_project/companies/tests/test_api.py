@@ -63,12 +63,12 @@ def test_create_company_with_wrong_status_should_fail(client)->None:
     assert "is not a valid choice" in str(response.content)
 
 # Example of test which can fail but the sets should complete
-#@pytest.mark.xfail
+@pytest.mark.xfail
 def test_can_fail()->None:
     assert 1==2
 
 # Example of test which should be skipped
-#@pytest.mark.skip
+@pytest.mark.skip
 def test_should_be_skipped()->None:
     assert 1==2
 
